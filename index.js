@@ -1,9 +1,11 @@
 module.exports = {
 	rules: {
-		'comma-dangle': ["error", "never"],
-		'indent': ["warn", "tab"],
-		'max-len': [1, 80, 4, {
-			ignoreComments: true,
+		'array-bracket-spacing': ["warn", "never"],
+		'comma-spacing':         ["error", {"before": false, "after": true }],
+		'comma-dangle':          ["error", "never"],
+		'indent':                ["warn", "tab"],
+		'max-len':               ["warn", 80, {
+			ignoreComments: false,
 			ignoreUrls: true
 		}]
 	}
